@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Group from './assets/img/icon/Group 23.png';
+import './assets/style/App.scss';
+
+// Dependencies
+import { Routes, Route } from 'react-router-dom';
+
+// Components
+import DogsComponents from './components/DogsContructions'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className='App_construction'>
+        <h1 className='App_construction-tittle'>En Construccion</h1>
+        <DogsComponents/>
+        </div>
+      
+
+
+      <Routes>
+              <Route path="/" element={''} />
+              <Route path="/about" element={'<AboutUs />'} />
+              <Route path="/contact" element={''} />
+              <Route path="/menu" element={''} />
+      </Routes>
     </div>
   );
 }

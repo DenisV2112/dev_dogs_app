@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap");
+@import "src/assets/style/_typographt.scss";
+
+/*path crear un recorrido parauna animacion*/
+.App {
+  background-color: white;
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+;
+.App_construction-tittle{
+  display: flex;
+  color: #61dafb;
+}
+  
+}
+
+  
+.App-logo {
+  filter: brightness(1.5) saturate(100%) hue-rotate(180deg) contrast(1.2);
+  animation: neon-blink 0.7s ease-in-out infinite alternate;
+}
+
+@keyframes neon-blink {
+  from {
+      filter: brightness(1) saturate(100%) hue-rotate(180deg) contrast(1.2);
+  }
+  to {
+      filter: brightness(3) saturate(150%) hue-rotate(220deg) contrast(1.5);
+  }
+}
+
+
+
+.App-logo path {
+  fill: #61dafb;
+}
+
+
+.App-header {
+  background-color:white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color:  #61dafb;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.App_construction-tittle{
+  
+  font-family: Abel-regular;
+  color: #61dafb;
+  font-size: 500%;
+}
+
+
+
+
+/////
+
+html {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(to top, #134e89, #05131d);
+}
+
+body,
+.container {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 50px;
+}
+
+.container > * {
+  animation: float 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(30px);
+  }
+}
+
+.created {
+  background: 
+    url(https://assets.codepen.io/154065/internal/avatars/users/default.png),
+    linear-gradient(to bottom, #884ced, #ec1cce);
+  background-size: 75px 75px, cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 2em;
+  
+  & span,
+  & h2,
+  & p,
+  & a {
+    font-family: Montserrat;
+    margin: 0;
+  }
+  
+  & a,
+  & p,
+  & span {
+    color: #fff;    
+  }
+  
+  & h2 {
+    font-weight: 700;
+    transform: translate(0, -4px);    
+  }
+  
+  & a {
+    text-decoration-color: rgba(255,255,255,0.4);
+  }
+  
+  & a:hover {
+    color: #e6e82a;
+  }
+}
